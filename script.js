@@ -165,6 +165,7 @@ const bg = async (no, nowait) => {
         div.style.bottom = ".2em";
         div.href = data.url;
         div.style.textDecoration = "none";
+        div.textContent = ``;
         div.style.color = "white";
         div.style.fontSize = "70%";
     } else {
@@ -175,5 +176,8 @@ const bg = async (no, nowait) => {
     }
     return data;
 };
+
+const q = async (txt) => await show(txt, ["はい", "いいえ"]) == "はい";
+const p = show;
 
 export { bg, show, rnd, q, p };
