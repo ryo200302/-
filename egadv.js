@@ -165,7 +165,7 @@ const bg = async (no, nowait) => {
         div.style.bottom = ".2em";
         div.href = data.url;
         div.style.textDecoration = "none";
-        div.textContent = ``;
+        div.textContent = `FIND/47 no.${no} ${data.title} © ${data.author} クリエイティブ・コモンズ・ライセンス（表示4.0 国際）`;
         div.style.color = "white";
         div.style.fontSize = "70%";
     } else {
